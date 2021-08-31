@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<%- include('./includes/head.ejs') %>
+<h2 class="scienceTitle" id="scienceTitle" style="margin-left: 40%; font-family: Arial, Helvetica, sans-serif; font-size: 28px; font-weight: lighter; padding: 8px 0;" >Biography Books</h2>
+<hr style="width: 60%;">
+<%- include('./includes/product-container.ejs') %>
+<section>
+    <div class="shopping-cart deactivated">
+         <div class="x-button" id="x-button">
+             <h1>X</h1>
+         </div>
+         <div class="items" id="items">
+             
+         </div>
+         <hr>
+         <h2 class="totalText">Total : <span id="total" class="total">  0.00  </span> $</h2>
+         <div class="order" id="order">
+             <button class="orderBtn"> <a href="/shop/cart-page" target="_blank">Order now</a></button>
+             <button class="clear">Clear</button>
+         </div>
+    </div>
+</section>
+<%- include('./includes/footer.ejs') %>
+<script src="/js/script.js"></script>
+</body>
+</html>

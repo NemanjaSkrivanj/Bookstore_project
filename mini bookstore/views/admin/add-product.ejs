@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../includes/head.ejs') %>
+    <link rel="stylesheet" href="/admin.css">
+    <div class="container">
+        <h1 class="text">Add a book</h1>
+        <form action="/admin/add-product" method="POST" id="form" class="form">
+        <label>Title</label>
+        <input type="text" name="title" id="title">
+        <label for="Genre"></label>
+        <label for="genre">Choose a genre:</label>
+        <select id="genre" name="genre">
+            <option value="popular_science">Popular Science</option>
+            <option value="top_books">Top Books</option>
+            <option value="thrillers">Thrillers</option>
+            <option value="biographies">Biographies</option>
+        </select>
+        <label>Price</label>
+        <input type="number" step=".01" name="price" id="price">
+        <label>Description</label>
+        <textarea name="description" id="description" cols="30" rows="8"></textarea>
+        <label>Author</label>
+        <input type="text" name="author" id="author">
+        <label>Cover</label>
+        <input type="text" name="cover" id="cover">
+        <button type="submit" id="add">Add</button>
+    </div>
+    </form>
+    <%- include('../includes/footer.ejs') %> 
+</body>
+</html>

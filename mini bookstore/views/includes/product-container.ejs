@@ -1,0 +1,28 @@
+<div class="container-main">
+    <% for(let book of books) { %>
+        <div class="product" id="product">
+            <div class="img" id="img">
+                <img src="<%= book.cover %>" alt="">
+            </div>
+            <div class="cart" id="cart">
+                <i class="fas fa-shopping-cart addCart" id="cart"></i>
+                <i class="far fa-heart" id="heart"></i>
+            </div>
+            <div class="details" id="details">
+                    <input type="hidden" name="hidden" id="hidden" value="<%= book.table_name %>">
+                    <a href="<%= book.id %>?name=<%=book.table_name%>" target="_blank">Details</a>
+            </div>
+            <div class="info" id="info">
+                <div class="title" id="title">
+                    <h3><%= book.title %> </h3>
+                </div>
+                <div class="author" id="author">
+                    <h4><%= book.author %></h4>
+                </div>
+                <div class="price" id="price">
+                    <h3><%= book.price %>$</h3>
+                </div>
+            </div>
+        </div>
+    <% } %>
+</div>

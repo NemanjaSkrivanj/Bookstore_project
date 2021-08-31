@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<%- include('./includes/head.ejs') %>
+<link rel="stylesheet" href="details.css">
+
+<div class="main-details-container" id="main-details-container">
+    <div class="prodImg" id="prodImg">
+        <img src="<%= product.cover %>" alt="" width="300px" height="400px">
+    </div>
+    <div class="prodInfo" id="prodInfo">
+        <h1 class="prodTitle" id="prodTitle"><%= product.title %></h1>
+        <h3>Author: <span class="prodAuthor" id="prodAuthor"><%= product.author %></span></h3>
+        <h5 class="prodDesc" id="prodDesc"><%= product.description %></h5>
+        <hr>
+        <h3 class="prodPrice" id="prodPrice"> <%= product.price %>$</h3>
+        <button class="prodAddToCart" id="prodAddToCart"> Add To Cart</button>
+    </div>
+</div>
+
+<%- include('./includes/cart.ejs') %>
+
+<%- include('./includes/footer.ejs') %>
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+This is a fullstack project of an online bookstore. Back-end part is done with Node.js and MySQL. Download the files, run 'npm install', import the bookstore database into your database service and then run 'npm start' to visit the website. The project is still under construction

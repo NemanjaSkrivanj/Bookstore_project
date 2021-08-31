@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./includes/head.ejs') %>
+   <main>
+       <div class="landing-photo" id="landing-photo">
+           <div class="left-text">
+                <h1>ORDER NOW! </h1> <span id="green"> <h2> Online discounts included. </h2> </span>
+            </div>
+            <div class="right-text">
+                <h1>Oldschool? Come and see the books in person. </h1>
+                <hr>
+                <h2>Baker Street 122, NY</h2>
+            </div>
+       </div>
+       <hr style="width: 80%;">
+       <h2 id="topbooks">Top Books</h2>
+       <%- include('./includes/product-container.ejs') %>
+   </main>
+   <%- include('./includes/cart.ejs') %>
+   <%- include('./includes/footer.ejs') %>
+   <script src="js/script.js"></script>
+</body>
+</html>
